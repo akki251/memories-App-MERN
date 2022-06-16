@@ -10,6 +10,7 @@ import PostDetail from './components/PostDetails/PostDetail';
 const App = () => {
   const user = JSON.parse(localStorage.getItem('profile'));
 
+
   return (
     <BrowserRouter>
       <Container maxWidth="xl">

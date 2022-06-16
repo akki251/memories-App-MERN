@@ -18,7 +18,7 @@ const Posts = ({ setCurrentId }) => {
   //   return <h1>NO posts</h1>;
   // }
 
-  console.log(isLoading, posts);
+  // console.log(isLoading, posts);
   return (
     <>
       {!isLoading && posts.length === 0 && <h1>No Posts Found</h1>}
@@ -32,7 +32,7 @@ const Posts = ({ setCurrentId }) => {
           ))}
         </Grid>
       )}
-     </>
+    </>
   );
 };
 

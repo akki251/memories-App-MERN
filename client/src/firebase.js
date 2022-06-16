@@ -3,7 +3,7 @@ import { initializeApp } from 'firebase/app';
 // TODO: Add SDKs for Firebase products that you want to use
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyAXILxjv2Ea44CZqwdmuK2jOyIUfw2nfHw',
+  apiKey: process.env.REACT_APP_FIREBASE_CLIENT_API_KEY,
   authDomain: 'mern-memories-6b9fa.firebaseapp.com',
   projectId: 'mern-memories-6b9fa',
   storageBucket: 'mern-memories-6b9fa.appspot.com',
