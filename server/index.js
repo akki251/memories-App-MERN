@@ -10,6 +10,7 @@ import errorController from './controllers/errorController.js';
 const app = express();
 
 dotenv.config();
+
 // middleware
 app.use(bodyParser.json({ limit: '30mb', extended: true }));
 app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }));
