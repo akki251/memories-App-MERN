@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { getAuth } from 'firebase/auth';
 const API = axios.create({
-  baseURL: 'https://memories--mern-proj.herokuapp.com/',
+  baseURL: 'https://gold-dead-squirrel.cyclic.app/',
   // baseURL: 'http://localhost:5000/',
 });
 
