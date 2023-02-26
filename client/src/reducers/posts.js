@@ -8,9 +8,10 @@ import {
   FETCH_POST,
   START_LOADING,
   END_LOADING,
-} from '../actions/constants/actionTypes';
+  COMMENT,
+} from "../actions/constants/actionTypes";
 
-export default (state = { isLoading: true, posts: 'default' }, action) => {
+export default (state = { isLoading: true, posts: "default" }, action) => {
   switch (action.type) {
     case START_LOADING: {
       return {
@@ -45,17 +46,34 @@ export default (state = { isLoading: true, posts: 'default' }, action) => {
     case UPDATE: {
       return {
         ...state,
-        posts: state.posts.map((post) => (post._id === action.payload._id ? action.payload : post)),
+        posts: state.posts.map((post) =>
+          post._id === action.payload._id ? action.payload : post
+        ),
       };
     }
     case DELETE: {
-      return { ...state, posts: state.posts.filter((post) => post._id !== action.payload) };
+      return {
+        ...state,
+        posts: state.posts.filter((post) => post._id !== action.payload),
+      };
     }
 
     case LIKE_POST: {
       return {
         ...state,
-        posts: state.posts.map((post) => (post._id === action.payload._id ? action.payload : post)),
+        posts: state.posts.map((post) =>
+          post._id === action.payload._id ? action.payload : post
+        ),
+      };
+    }
+    case COMMENT: {
+      return {
+        ...state,
+        posts: state.posts.map((post) => {
+          if (post._id === action.payload._id) {
+            return action.payload;
+          } else return post;
+        }),
       };
     }
     default:

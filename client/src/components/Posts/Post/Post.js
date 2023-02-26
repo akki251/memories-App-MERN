@@ -23,7 +23,7 @@ const Post = ({ post, setCurrentId }) => {
   const classes = useStyles();
   const dispatch = useDispatch();
   const history = useHistory();
-  // console.log(post.tags);
+
 
   const deletePostHandler = () => {
     dispatch(deletePost(post._id));
