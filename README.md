@@ -6,7 +6,7 @@ This is a full-stack web application developed using the MERN stack (MongoDB, Ex
 Features
 --------
 
--   User authentication (sign up, log in, log out) using JWT (JSON Web Tokens).
+-   User authentication (sign up, log in, log out) using JWT (JSON Web Tokens) & Google Auth.
 -   Ability to create, update, delete and like posts.
 -   Pagination and filtering of posts.
 -   Display of posts in a grid or list view.
