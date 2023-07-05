@@ -1,7 +1,7 @@
 import axios from "axios";
 import { getAuth } from "firebase/auth";
 const API = axios.create({
-  baseURL: "https://gold-dead-squirrel.cyclic.app/",
+  baseURL: "https://memories-backend-wqge.onrender.com/posts/",
   // baseURL: 'http://localhost:5000/',
 });
 
